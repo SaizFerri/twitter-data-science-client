@@ -6,5 +6,23 @@ export default {
     state.data.formatedCountOutput = [
       ...data.formatedCountOutput
     ]
+  },
+
+  setTweetsPerHourToState (state, data) {
+    state.tweetsPerHour = [
+      ...data
+    ]
+  },
+
+  getDaysWithNoData (state, payload) {
+    state.daysWithNoData = [
+      ...payload.data
+    ]
+  },
+
+  setDataChartFooter (state, payload) {
+    state.dataChartFooter = [
+      ...payload.data
+    ]
   }
 }

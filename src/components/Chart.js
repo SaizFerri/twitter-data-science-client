@@ -10,12 +10,17 @@ export default Bar.extend({
         datasets: this.datasets
       },
       {
+        title: {
+          display: true,
+          text: '10 top tweeted languages',
+          position: 'left'
+        },
         responsive: true,
         maintainAspectRatio: false,
         scales: {
           xAxes: [
             {
-              barThickness: 100
+              barThickness: 25
             }
           ],
           yAxes: [{
