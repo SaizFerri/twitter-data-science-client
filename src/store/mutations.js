@@ -24,5 +24,11 @@ export default {
     state.dataChartFooter = [
       ...payload.data
     ]
+  },
+
+  setMostUsedHashtagsToState (state, data) {
+    state.mostUsedHashtags = [
+      ...data
+    ]
   }
 }

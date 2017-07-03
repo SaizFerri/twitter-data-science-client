@@ -36,13 +36,14 @@ export default {
         data: this.formatOutput()
       }))
     this.getNoData()
+      .then(() => console.log(this.getMostUsedHashtags()))
       .then(() => this.$store.commit({
         type: 'getDaysWithNoData',
         data: this.getDaysNoData()
       }))
   },
   methods: {
-    ...mapActions(['fetchLanguages', 'getNoData']),
+    ...mapActions(['fetchLanguages', 'getNoData', 'getMostUsedHashtags']),
     ...mapGetters(['getDaysNoData', 'formatOutput']),
     ...mapMutations(['getDaysWithNoData', 'setDataChartFooter'])
   }
