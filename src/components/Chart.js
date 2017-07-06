@@ -22,14 +22,7 @@ export default Bar.extend({
             {
               barThickness: 25
             }
-          ],
-          yAxes: [{
-            ticks: {
-              max: 80000,
-              min: 0,
-              stepSize: 5000
-            }
-          }]
+          ]
         }
       }
     )

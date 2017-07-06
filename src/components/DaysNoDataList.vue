@@ -1,7 +1,7 @@
 <template>
   <div id="app-list">
     <div class="container">
-      <h3>Days with no data or days where in some hours data is missing</h3>
+      <h3>Tagen mit fehlenden Daten</h3>
       <ul class="list-group" v-for="day in daysWithNoData" :key="day">
         <li class="list-group-item">{{ day | formatDate}}: Data missing</li>
       </ul>
